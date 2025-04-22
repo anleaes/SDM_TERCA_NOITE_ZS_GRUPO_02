@@ -1,16 +1,16 @@
 """
-WSGI config for AulaAntonio project.
+WSGI config for modeloApp project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
 For more information on this file, see
-https://docs.djangoproject.com/en/5.2/howto/deployment/wsgi/
+https://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/
 """
 
 import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "AulaAntonio.settings")
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'modeloApp.settings')
 
 application = get_wsgi_application()

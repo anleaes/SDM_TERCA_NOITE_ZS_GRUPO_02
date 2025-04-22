@@ -3,7 +3,7 @@ from .models import Category
 from rest_framework import viewsets
 from .serializer import CategorySerializer
 
-# Create your views here.
+# Após o comentario "# Create your views here." e crie as views "Category".
 
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
