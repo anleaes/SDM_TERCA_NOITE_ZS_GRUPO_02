@@ -14,6 +14,7 @@ class Client(models.Model):
     gender = models.CharField('Genero', max_length=1, choices=GENDER_CHOICES)
     client_socialnetwork = models.ManyToManyField(Socialnetwork, through='ClientSocialnetwork', blank=True)
 
+
     
 
 class Meta:
