@@ -1,4 +1,5 @@
 from django.db import models
+from Socialnetwork.models import Socialnetwork
 
 class Client(models.Model):
     first_name = models.CharField('Nome', max_length=50)
