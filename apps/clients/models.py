@@ -24,3 +24,16 @@ class Meta:
 
 def __str__(self):
     return self.name
+
+
+class ClientSocialnetwork(models.Model):
+    client = models.ForeignKey(Client, on_delete=models.CASCADE)
+    socialnetwork = models.ForeignKey(Socialnetwork, on_delete=models.CASCADE)
+
+class Meta:
+    verbose_name = 'Item de Redes Social'
+    verbose_name_plural = 'Itens de Rede Social'
+    ordering =['id']
+
+def __str__(self):
+    return self.socialnetwork.name 
