@@ -1,14 +1,19 @@
 from django.db import models
 
 class Client(models.Model):
-    adress = models.CharField('Endereço', max_length=100)
-    cell_phone = models.TextField('Telefone', max_length=50)
-    email = models.EmailField('Email', max_length=50) 
-    gender = models.Choices('Gênero', choices=[
+    first_name = models.CharField('Nome', max_length=50)
+    last_name = models.CharField('Sobrenome', max_length=100) 
+    address = models.CharField('Endereco', max_length=200)   
+    cell_phone = models.CharField('Telefone celular', max_length=20)
+    email = models.EmailField('E-mail',null=False, blank=False)
+    GENDER_CHOICES = (
         ('M', 'Masculino'),
         ('F', 'Feminino'),
-        ('O', 'Outro')
-    ], default='O')
+        ('O', 'Outro'),
+    )
+    gender = models.CharField('Genero', max_length=1, choices=GENDER_CHOICES)
+    client_socialnetwork = models.ManyToManyField(Socialnetwork, through='ClientSocialnetwork', blank=True)
+
     
 
 class Meta:
