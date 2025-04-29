@@ -47,13 +47,9 @@ INSTALLED_APPS = [
     'categories.apps.CategoriesConfig',
     'products.apps.ProductsConfig',
     'clients.apps.ClientsConfig',
-    'products.apps.ProductsConfig',
-
-    'orders.apps.OrdersConfig',
+    'order.apps.OrdersConfig',
     'orderitem.apps.OrdersConfig',
-
-    'client_socialnetworks.apps.ClientSocialnetworksConfig',
-
+    'client_socialnetwork.apps.ClientSocialnetworksConfig',
 ]
 
 MIDDLEWARE = [
@@ -131,7 +127,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'America\Sao_Paulo'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
