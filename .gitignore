@@ -1,0 +1,14 @@
+/apps/categories/__pycache__/*
+/apps/categories/migrations/*
+/apps/products/__pycache__/*
+/apps/products/migrations/*
+/apps/Socialnetwork/__pycache__/*
+/apps/Socialnetwork/migrations/*
+/apps/clients/__pycache__/*
+/apps/clients/migrations/*
+/apps/order/__pycache__/*
+/apps/order/migrations/*
+/apps/client_socialnetwork/__pycache__/*
+/apps/client_socialnetwork/migrations/*
+/apps/orderitem/__pycache__/*
+/apps/orderitem/migrations/*
