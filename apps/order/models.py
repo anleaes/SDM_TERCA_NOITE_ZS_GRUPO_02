@@ -1,7 +1,7 @@
 from django.db import models
 from categories.models import Category
 
-class Product(models.Model):
+class Order(models.Model):
     total_price = models.DecimalField('Preço Total', max_length=50)
     status = models.BooleanField('Status', max_length=100)
     client = models.ClientField()
