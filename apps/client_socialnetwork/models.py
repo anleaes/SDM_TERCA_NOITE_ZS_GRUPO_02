@@ -1,6 +1,6 @@
 from django.db import models
 from clients.models import Client
-from Socialnetwork.models import SocialNetwork
+from socialnetwork.models import SocialNetwork
 
 class ClientSocialnetwork(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE)

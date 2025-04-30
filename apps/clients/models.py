@@ -1,5 +1,5 @@
 from django.db import models
-from Socialnetwork.models import Socialnetwork
+from socialnetwork.models import SocialNetwork
 
 class Client(models.Model):
     first_name = models.CharField('Nome', max_length=50)
@@ -13,7 +13,7 @@ class Client(models.Model):
         ('O', 'Outro'),
     )
     gender = models.CharField('Genero', max_length=1, choices=GENDER_CHOICES)
-    client_socialnetwork = models.ManyToManyField(Socialnetwork, through='ClientSocialnetwork', blank=True)
+    client_socialnetwork = models.ManyToManyField(SocialNetwork, through='client_socialnetwork.ClientSocialnetwork', blank=True)
 
 class Meta:
         verbose_name = 'Cliente'
